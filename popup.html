@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhắc uống nước 💧</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 260px;
+      background: #f8f9fa;
+    }
+    h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h3>Thông tin cá nhân</h3>
+  
+  <label for="weight">Cân nặng (kg):</label>
+  <input type="number" id="weight" min="20" max="200" />
+
+  <label for="activity">Mức độ hoạt động:</label>
+  <select id="activity">
+    <option value="low">Ít</option>
+    <option value="medium">Trung bình</option>
+    <option value="high">Nhiều</option>
+  </select>
+
+  <label for="climate">Khí hậu:</label>
+  <select id="climate">
+    <option value="normal">Bình thường</option>
+    <option value="hot">Nóng</option>
+    <option value="cold">Lạnh</option>
+  </select>
+
+  <button id="startBtn">Bắt đầu nhắc!</button>
+  <script src="popup.js"></script>
+</body>
+</html>
